@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚡ Universo Cinematográfico Marvel (MCU) - Heróis e Histórias</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-container">
+            <h1 class="logo-text">MARVEL <span class="logo-subtitle">Cinematic Universe</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#intro">Início</a></li>
+                <li><a href="#personagens">Heróis</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro" class="hero-section">
+            <div class="intro-content">
+                <h2>UMA AVENTURA ÉPICA COMEÇA AQUI!</h2>
+                <p>Mergulhe no universo de super-heróis, alienígenas e magia que cativou o mundo. Prepare-se para ação, risadas e muitos *easter eggs*!</p>
+                <div class="call-to-action">
+                    <a href="#personagens" class="btn primary-btn">Conheça os Vingadores!</a>
+                </div>
+            </div>
+            </section>
+
+        <section id="personagens" class="characters-section">
+            <h2 class="section-title">✨ Nossos Heróis e Suas Histórias</h2>
+            <p class="section-subtitle">Pequenos resumos de grandes lendas do MCU.</p>
+
+            <div class="character-card">
+                <div class="char-image-container">
+                    <img src="https://disneyplusbrasil.com.br/wp-content/uploads/2021/05/Tony-Stark-Substituto.jpg" alt="Foto de Tony Stark como Homem de Ferro">
+                </div>
+                <div class="char-details">
+                    <h3 class="char-name">Homem de Ferro (Tony Stark)</h3>
+                    <p class="char-status">O Gênio, Bilionário, Playboy, Filantropo.</p>
+                    <p class="char-bio">O playboy bilionário Tony Stark, após um sequestro, cria uma armadura de alta tecnologia para escapar. Ele se transforma no Homem de Ferro, um herói que usa sua inteligência e recursos para proteger o mundo, muitas vezes com um sarcasmo incomparável. Seu legado é o coração do MCU.</p>
+                </div>
+            </div>
+            
+            <div class="character-card reverse">
+                <div class="char-image-container">
+                    <img src="https://cdn.manualdohomem.com.br/?w=1233&h=772&key=aHR0cHM6Ly9tYW51YWxkb2hvbWVtbW9kZXJuby5jb20uYnI=&u=http%3A%2F%2Fmanualdohomemmoderno.com.br%2Ffiles%2F2019%2F04%2Ftreino-capitao-america-7.jpg" alt="Foto de Steve Rogers como Capitão América">
+                </div>
+                <div class="char-details">
+                    <h3 class="char-name">Capitão América (Steve Rogers)</h3>
+                    <p class="char-status">O Soldado Perfeito com o Coração de Ouro.</p>
+                    <p class="char-bio">Steve Rogers, um jovem frágil, mas de coração inabalável, é transformado em um super soldado. Ele personifica o que há de melhor na humanidade: coragem, honra e uma bondade genuína. Congelado por décadas, ele desperta no presente para liderar os Vingadores.</p>
+                </div>
+            </div>
+
+            <div class="character-card">
+                <div class="char-image-container">
+                    <img src="https://www.gaz.com.br/uploads/2021/07/viuva-negra-filme-marvel-scarlet-johannson.jpg" alt="Foto de Natasha Romanoff como Viúva Negra">
+                </div>
+                <div class="char-details">
+                    <h3 class="char-name">Viúva Negra (Natasha Romanoff)</h3>
+                    <p class="char-status">A Espiã que Virou Família.</p>
+                    <p class="char-bio">Treinada desde cedo como uma espiã de elite na Sala Vermelha, Natasha busca redenção usando suas habilidades mortais para fazer o bem. Ela é a cola emocional dos Vingadores, provando que nem todos os heróis precisam de superpoderes para salvar o universo.</p>
+                </div>
+            </div>
+
+            </section>
+
+        <section id="quiz" class="quiz-section">
+            <h2 class="section-title">❓ Quiz do Fã de Quadrinhos</h2>
+            <p class="section-subtitle">Teste seu conhecimento e prove que você é um **verdadeiro crente**!</p>
+
+            <div id="quiz-container">
+                </div>
+            
+            <button class="btn quiz-btn" onclick="iniciarQuiz()">Começar Quiz</button>
+            <button class="btn quiz-btn hidden" id="submit-quiz-btn" onclick="verificarRespostas()">Verificar Respostas</button>
+
+            <div id="quiz-results" class="results-box hidden">
+                <h3>Seu Resultado:</h3>
+                <p id="score-display"></p>
+                <p id="message-display"></p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Fã-Site Não Oficial do MCU. Mantenha-se no controle!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
