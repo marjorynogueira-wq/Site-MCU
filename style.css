@@ -122,7 +122,7 @@ section {
 
 .hero-section {
     background: linear-gradient(135deg, #004D99, #E30022); 
-    color: white;
+    color: red;
     text-align: center;
     padding: 100px 20px;
     border-bottom: 10px dashed #FFC72C;
